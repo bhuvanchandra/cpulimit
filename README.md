@@ -40,3 +40,8 @@ Contributions
 
 You are welcome to contribute to cpulimit with bugfixes, new features, or support for a new OS.
 If you want to submit a pull request, please do it on the branch develop and make sure all tests pass.
+
+Example usage:
+
+ # stress -c 1 & cpulimit -p `pidof -o $! stress` -l <percentage>
+
